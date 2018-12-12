@@ -10,9 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    var allExercises = [BasicExercises]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    func createExercise(typeOf: AllExercises) {
+        
+        let newExercise = ExClobal.defaultFactory.createExercise(type: typeOf)
+        allExercises.append(newExercise)
+    }
+    
+    
+    func runExercise() {
+        
+        for exer in allExercises {
+            exer.start()
+            exer.stop()
+        }
     }
 
 

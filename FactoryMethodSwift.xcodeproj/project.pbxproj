@@ -12,6 +12,11 @@
 		CE61288321C1504A00BB4B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE61288121C1504A00BB4B97 /* Main.storyboard */; };
 		CE61288521C1504D00BB4B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE61288421C1504D00BB4B97 /* Assets.xcassets */; };
 		CE61288821C1504D00BB4B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE61288621C1504D00BB4B97 /* LaunchScreen.storyboard */; };
+		CE61289021C1520800BB4B97 /* ExerciseClobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61288F21C1520800BB4B97 /* ExerciseClobal.swift */; };
+		CE61289321C153AD00BB4B97 /* BasicExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61289221C153AD00BB4B97 /* BasicExercises.swift */; };
+		CE61289921C1545D00BB4B97 /* Running.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61289821C1545D00BB4B97 /* Running.swift */; };
+		CE61289B21C1547200BB4B97 /* Cycling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61289A21C1547200BB4B97 /* Cycling.swift */; };
+		CE61289D21C1548400BB4B97 /* StrengthExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61289C21C1548400BB4B97 /* StrengthExercises.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		CE61288421C1504D00BB4B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE61288721C1504D00BB4B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE61288921C1504D00BB4B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE61288F21C1520800BB4B97 /* ExerciseClobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClobal.swift; sourceTree = "<group>"; };
+		CE61289221C153AD00BB4B97 /* BasicExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicExercises.swift; sourceTree = "<group>"; };
+		CE61289821C1545D00BB4B97 /* Running.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running.swift; sourceTree = "<group>"; };
+		CE61289A21C1547200BB4B97 /* Cycling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cycling.swift; sourceTree = "<group>"; };
+		CE61289C21C1548400BB4B97 /* StrengthExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthExercises.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				CE61287D21C1504A00BB4B97 /* AppDelegate.swift */,
+				CE61289121C1520E00BB4B97 /* FactoryGlobal */,
+				CE61289421C153B200BB4B97 /* BasicExercises */,
+				CE61289721C153F000BB4B97 /* TypeOfExercises */,
 				CE61287F21C1504A00BB4B97 /* ViewController.swift */,
 				CE61288121C1504A00BB4B97 /* Main.storyboard */,
 				CE61288421C1504D00BB4B97 /* Assets.xcassets */,
@@ -62,6 +75,32 @@
 				CE61288921C1504D00BB4B97 /* Info.plist */,
 			);
 			path = FactoryMethodSwift;
+			sourceTree = "<group>";
+		};
+		CE61289121C1520E00BB4B97 /* FactoryGlobal */ = {
+			isa = PBXGroup;
+			children = (
+				CE61288F21C1520800BB4B97 /* ExerciseClobal.swift */,
+			);
+			path = FactoryGlobal;
+			sourceTree = "<group>";
+		};
+		CE61289421C153B200BB4B97 /* BasicExercises */ = {
+			isa = PBXGroup;
+			children = (
+				CE61289221C153AD00BB4B97 /* BasicExercises.swift */,
+			);
+			path = BasicExercises;
+			sourceTree = "<group>";
+		};
+		CE61289721C153F000BB4B97 /* TypeOfExercises */ = {
+			isa = PBXGroup;
+			children = (
+				CE61289821C1545D00BB4B97 /* Running.swift */,
+				CE61289A21C1547200BB4B97 /* Cycling.swift */,
+				CE61289C21C1548400BB4B97 /* StrengthExercises.swift */,
+			);
+			path = TypeOfExercises;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE61289321C153AD00BB4B97 /* BasicExercises.swift in Sources */,
 				CE61288021C1504A00BB4B97 /* ViewController.swift in Sources */,
+				CE61289D21C1548400BB4B97 /* StrengthExercises.swift in Sources */,
+				CE61289021C1520800BB4B97 /* ExerciseClobal.swift in Sources */,
 				CE61287E21C1504A00BB4B97 /* AppDelegate.swift in Sources */,
+				CE61289921C1545D00BB4B97 /* Running.swift in Sources */,
+				CE61289B21C1547200BB4B97 /* Cycling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PGF8692NY;
 				INFOPLIST_FILE = FactoryMethodSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PGF8692NY;
 				INFOPLIST_FILE = FactoryMethodSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
